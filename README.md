@@ -1,4 +1,4 @@
-# signal/noise
+# akhbaar
 
 the x articles you bookmarked and ghosted, ranked weekly. tech, gtm, growth. no larp.
 
