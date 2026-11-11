@@ -47,7 +47,7 @@
     <button class="tab" data-c="growth">growth</button>
   </nav>
   <label class="search"><svg viewBox="0 0 24 24"><path d="M10.25 3.75a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zm-8.5 6.5a8.5 8.5 0 1 1 15.18 5.26l4.66 4.66-1.42 1.42-4.66-4.66A8.5 8.5 0 0 1 1.75 10.25z"/></svg><input id="q" placeholder="search the archives" aria-label="search articles"></label>
-  <div class="navr"><a class="hl-link" href="highlight.html">get highlighted</a></div>
+  <div class="navr"><a class="hl-link nl-link" href="#newsletter">newsletter</a> <a class="hl-link" href="highlight.html">get highlighted</a></div>
 </div></div>
 <main class="wrap">
   <section class="hero" id="hero">
@@ -63,6 +63,21 @@
     <div class="h4"><b>#1 this week</b>&nbsp;· the ones that ate</div>
     <div class="podium" id="podium"></div>
     <div id="frontspons"></div>
+  </section>
+  <section class="nl" id="newsletter">
+    <div class="nl-in">
+      <div class="kicker"><span class="extra">by post</span>the akhbaar dispatch · tuesdays + fridays</div>
+      <h2>too lazy to open the site? <em>we'll come to you.</em></h2>
+      <div class="nl-cols">
+        <div><b>friday · the top 5</b>the 5 most saved articles of the week. read them, or at least forward them and look smart.</div>
+        <div><b>tuesday · the trivia</b>a bunch of random, actually useful bits pulled from inside the articles. stats, tactics, one-liners. 3 min read.</div>
+      </div>
+      <form class="nl-form" data-action="subscribe" novalidate>
+        <input type="email" name="email" placeholder="you@company.com" aria-label="your email" autocomplete="email" required>
+        <button type="submit">subscribe (free)</button>
+      </form>
+      <p class="nl-msg" aria-live="polite">two emails a week. no spam, no "quick favour". unsubscribe whenever.</p>
+    </div>
   </section>
   <div id="sections"><div class="empty">filtering out the larp…</div></div>
   <section class="method">
@@ -86,7 +101,7 @@
   </section>
 </main><footer><div class="wrap" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
   <span>akhbaar · for people with 400 unread bookmarks · every article links back to x</span>
-  <span><a href="highlight.html">get highlighted</a> · <a href="https://x.com/adhiraj_xyz" target="_blank" rel="noopener">@adhiraj_xyz</a></span>
+  <span><a href="#newsletter">newsletter</a> · <a href="highlight.html">get highlighted</a> · <a href="https://x.com/adhiraj_xyz" target="_blank" rel="noopener">@adhiraj_xyz</a></span>
 </div></footer>
 <script>
 (function(){var d=new Date(),n=d.getDate(),s=(n%10==1&&n!=11)?'st':(n%10==2&&n!=12)?'nd':(n%10==3&&n!=13)?'rd':'th';
@@ -95,5 +110,6 @@ var no=Math.max(1,Math.floor((d-new Date('2026-11-02T00:00:00'))/864e5)+1);docum
 var t=document.getElementById('topbar');if(t&&'IntersectionObserver'in window){var m=document.querySelector('.mast');new IntersectionObserver(function(e){t.classList.toggle('stuck',!e[0].isIntersecting)}).observe(m)}})();
 </script>
 <script src="js/home.js"></script>
+<script src="js/newsletter.js"></script>
 </body>
 </html>
