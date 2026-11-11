@@ -45,11 +45,6 @@
     '<div class="np-kick">extra! extra! read all about it</div>'+
     '<h2 class="np-h">your inbox to get a newspaper. <em>twice a week.</em></h2>'+
     '<div class="np-deck">local reader, 400 unread bookmarks deep, finally rescued. officials confirm: "zero larp."</div>'+
-    '<div class="np-cols">'+
-      '<div><p class="np-dc">every friday, the five most saved x articles of the week land in your inbox. ranked by saves, not vibes. read them, or forward them and look smart.</p></div>'+
-      '<div class="np-pic"><div class="np-ph"><span>tue + fri</span></div><small>fig. 1: you, finally reading.</small></div>'+
-      '<div><p>every tuesday, a bunch of random, actually useful trivia pulled from inside the articles. stats, tactics, one-liners. three minute read. sources linked, in case someone asks.</p></div>'+
-    '</div>'+
     '<div class="np-sign">'+
       '<form class="nl-form" data-action="subscribe" novalidate><input type="email" name="email" placeholder="you@company.com" aria-label="your email" autocomplete="email" required><button type="submit">subscribe (free)</button></form>'+
       '<p class="nl-msg" aria-live="polite">no spam. no "quick favour". unsubscribe whenever.</p>'+
