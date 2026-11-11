@@ -68,6 +68,7 @@
   function open(){
     if(used||document.hidden)return;used=shown=true;clearTimeout(t);
     document.body.appendChild(wrap);
+    if(getComputedStyle(wrap).position!=='fixed'){wrap.remove();return;}
     document.documentElement.classList.add('np-lock');
     bind(wrap.querySelector('form'),function(a){if(a==='subscribe')setTimeout(close,2600);});
     wrap.querySelector('.np-x').onclick=close;wrap.querySelector('.np-no').onclick=close;
